@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidepanel {
+  height: 250px;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: gainsboro;
+  opacity: 100%;
+  height: 1000px;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidepanel a {
+  text-align: center;
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 20px;
+}
+.openbtn {
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.openbtn,
+.sidepanel {
+  display: none;
+  position: absolute;
+}
+
+header h1 {
+  padding: 20px 0px 20px 0px;
+  font-size: 60px;
+  text-align: center;
+}
+
+header h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  padding: 30px 40px 30px 40px;
+  justify-content: center;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.banner {
+  display: flex;
+  padding: 30px 40px 30px 40px;
+  background: brown;
+}
+
+.title_banner {
+  padding: 150px 0px 0px 80px;
+}
+
+.title_banner h2 {
+  font-size: 45px;
+}
+
+.title_banner p {
+  padding-top: 15px;
+  font-style: italic;
+}
+
+.services {
+  padding: 30px 40px 30px 40px;
+}
+
+h3.sub_heading {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+p.sub {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.services img {
+  width: 1270px;
+}
+
+.service_content {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px 50px 20px;
+}
+
+.services h6 {
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.services p {
+  font-size: 14px;
+}
+.description {
+  padding: 0px 50px 0px 50px;
+}
+
+.prac_img {
+  display: flex;
+  justify-content: center;
+}
+
+.prac_img img {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.see_more {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.see_more button {
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 11px;
+  border-color: silver;
+}
+
+.see_more button:hover {
+  color: white;
+  background: brown;
+}
+
+.get_in_touch {
+  background: gainsboro;
+  text-align: center;
+  padding-bottom: 40px;
+  line-height: 25px;
+}
+
+.footer {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 414px) {
+  .openbtn,
+  .sidepanel {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+  header h1 {
+    padding: 30px 0px 20px 0px;
+    font-size: 32px;
+  }
+
+  .banner {
+    padding: 50px 10px 30px 40px;
+  }
+
+  .banner img {
+    width: 170px;
+    height: 120px;
+  }
+
+  .title_banner {
+    padding: 0px 0px 0px 10px;
+  }
+
+  .title_banner h2 {
+    font-size: 20px;
+  }
+
+  .title_banner p {
+    font-size: 12px;
+  }
+
+  .services {
+    padding: 30px 2px 30px 4px;
+  }
+
+  h3.sub_heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+  p.sub {
+    font-size: 12px;
+    padding-bottom: 30px;
+  }
+
+  .services img {
+    width: 370px;
+  }
+
+  .service_content {
+    padding: 20px 2px 20px 2px;
+  }
+
+  .description {
+    padding: 0px 5px 0px 5px;
+  }
+
+  .description h6 {
+    font-size: 12px;
+    padding: 40px 0px 15px 0px;
+  }
+
+  .description p {
+    font-size: 5;
+  }
+
+  .prac_img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prac_img img {
+    width: 300px;
+    padding: 0px 5px 30px 5px;
+  }
+
+  .see_more {
+    padding-top: 20px;
+  }
+}
